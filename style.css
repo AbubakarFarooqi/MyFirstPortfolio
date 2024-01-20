@@ -1,0 +1,117 @@
+:root {
+    --textColor: #fff;
+    --pinkColor: #ff004f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("images/background.png");
+    background-position: center;
+}
+
+#header .container {
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    /* 10 px from top and bottom and 20px from L/R */
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -2px;
+    background: var(--pinkColor);
+    width: 0%;
+    height: 3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+
+.header-text h1 span {
+    color: var(--pinkColor);
+
+}
+
+
+/* .................About Section.................. */
+
+#about {
+    padding: 80px 40px;
+    color: #ababab;
+}
+
+
+#about .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col2 {
+    flex-basis: 50%;
+}
+
+.col2 h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
