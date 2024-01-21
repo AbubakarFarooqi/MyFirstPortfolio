@@ -115,3 +115,59 @@ nav ul li a:hover::after {
     font-weight: 600;
     color: #fff;
 }
+
+.tab-titles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.tab-links {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.active-link {
+    transform: scale(1.4);
+
+}
+
+.tab-links::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -2px;
+    background: var(--pinkColor);
+    width: 0%;
+    height: 3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0px;
+
+}
+
+.tab-content ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}

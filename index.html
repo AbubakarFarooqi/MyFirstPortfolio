@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,60 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic at nesciunt veritatis dicta? Unde
                         nisi eligendi fuga a maxime expedita quidem omnis, similique amet eius illo architecto
                         reprehenderit consequuntur ipsum.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="setTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="setTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="setTab('education')">Education</p>
+                    </div>
+
+                    <!--......................... Skills..................... -->
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in full-stack development with expertise in
+                                both MERN and ASP.NET MVC.</li>
+                            <li><span>App Development</span><br>Adept in crafting Android applications using the Flutter
+                                framework.</li>
+                            <li>
+                                <span>Windows Form Development</span><br>
+                                Experienced in developing applications with Windows Forms.
+                            </li>
+                            <li>
+                                <span>WPF (Windows Presentation Foundation)</span><br>
+                                Knowledgeable in WPF for creating desktop applications on the Windows platform.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .........................Experience.............................. -->
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in full-stack development with expertise in
+                                both MERN and ASP.NET MVC.</li>
+                            <li><span>App Development</span><br>Adept in crafting Android applications using the Flutter
+                                framework.</li>
+                            <li>
+                                <span>Windows Form Development</span><br>
+                                Experienced in developing applications with Windows Forms.
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- .........................Education.............................. -->
+
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in full-stack development with expertise in
+                                both MERN and ASP.NET MVC.</li>
+                            <li><span>App Development</span><br>Adept in crafting Android applications using the Flutter
+                                framework.</li>
+
+                        </ul>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
